@@ -4,6 +4,8 @@ A second look for citizen stream assessments. Riffle checks a volunteer's visual
 
 Built for the IEEE OneAquaHealth Global Hackathon 2026, **Track 3: AI-Supported Assessment**.
 
+**Live demo:** https://mavedam.github.io/riffle/ (use the demo presets at the top of the page)
+
 ![Second-look panel](docs/screenshot-second-look.png)
 
 ## Run it
