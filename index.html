@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Riffle: a second look for citizen stream assessments</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <h1>Riffle</h1>
+    <p class="tag">A second look for citizen stream assessments. Flags, explains, and asks. Never overwrites.</p>
+    <nav role="tablist" aria-label="Views">
+      <button role="tab" id="tab-assess" aria-controls="view-assess" aria-selected="true">Assess a stream</button>
+      <button role="tab" id="tab-review" aria-controls="view-review" aria-selected="false" tabindex="-1">Reviewer queue <span id="queue-count" class="badge">0</span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="view-assess" role="tabpanel" aria-labelledby="tab-assess">
+      <div class="demo-bar">
+        <span>Demo presets:</span>
+        <button type="button" data-preset="typical">Typical visit</button>
+        <button type="button" data-preset="contradictory">Contradictory answers</button>
+        <button type="button" data-preset="rain">After heavy rain</button>
+        <button type="button" data-preset="sewage">Sewage signs</button>
+      </div>
+
+      <form id="assess-form" novalidate>
+        <label class="site">Site
+          <select id="site" name="site"></select>
+        </label>
+        <p class="note">All sites and history in this demo are synthetic.</p>
+
+        <div id="metrics"></div>
+
+        <fieldset>
+          <legend>What else did you notice?</legend>
+          <div class="ctx" id="context"></div>
+          <label>Minutes spent on site
+            <input type="number" id="minutes" name="minutes" min="0" max="240" value="15" inputmode="numeric" />
+          </label>
+          <label class="inline"><input type="checkbox" id="photo" name="photo" /> I attached a photo</label>
+        </fieldset>
+
+        <div class="actions">
+          <button type="button" id="check-btn" class="primary">Check my answers</button>
+          <button type="submit" id="submit-btn" disabled>Submit</button>
+        </div>
+      </form>
+
+      <section id="feedback" aria-live="polite" aria-atomic="false"></section>
+    </section>
+
+    <section id="view-review" role="tabpanel" aria-labelledby="tab-review" hidden>
+      <h2>Waiting for a human reviewer</h2>
+      <p class="note">Riffle only routes. A person approves or rejects, and a rejection needs a reason.</p>
+      <div id="queue"></div>
+      <h2>All submissions</h2>
+      <div id="all"></div>
+      <button type="button" id="clear-btn" class="link">Clear demo data</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prototype for the IEEE OneAquaHealth Global Hackathon 2026, Track 3: AI-Supported Assessment. MIT licensed.</p>
+  </footer>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

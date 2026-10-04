@@ -1,0 +1,639 @@
+{
+  "resourceType": "Bundle",
+  "id": "ddd2e961-361d-4f50-8048-d46f072e238b",
+  "type": "collection",
+  "timestamp": "2026-10-04T21:36:06.202Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+      "resource": {
+        "resourceType": "Location",
+        "id": "55102479-c310-4821-b8d1-8048b9cfb7a4",
+        "identifier": [
+          {
+            "system": "urn:riffle:site",
+            "value": "demo-a"
+          }
+        ],
+        "name": "Demo Site A: semi-natural urban stretch (synthetic)",
+        "position": {
+          "latitude": 40.205,
+          "longitude": -8.415
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e569b207-b8bb-4e7b-833e-f46bce821457",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e569b207-b8bb-4e7b-833e-f46bce821457",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "channel",
+              "display": "Channel alteration"
+            }
+          ],
+          "text": "How natural does the stream channel look?"
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueInteger": 4,
+        "interpretation": [
+          {
+            "text": "Mostly natural, a few changes"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9afc3a5e-9f2b-4d9f-a4d5-96f126da9ea4",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9afc3a5e-9f2b-4d9f-a4d5-96f126da9ea4",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "banks",
+              "display": "Bank stability"
+            }
+          ],
+          "text": "Are the banks holding firm?"
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueInteger": 5,
+        "interpretation": [
+          {
+            "text": "Firm, no visible erosion"
+          }
+        ],
+        "note": [
+          {
+            "text": "[Riffle firm_banks_no_roots] Banks are rated firm while almost no plants grow along them."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:20abdae3-53fe-44d3-89a9-00fc829fc10f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "20abdae3-53fe-44d3-89a9-00fc829fc10f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "vegetation",
+              "display": "Riparian vegetation"
+            }
+          ],
+          "text": "How much plant cover grows along the banks?"
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueInteger": 1,
+        "interpretation": [
+          {
+            "text": "Almost none"
+          }
+        ],
+        "note": [
+          {
+            "text": "[Riffle firm_banks_no_roots] Banks are rated firm while almost no plants grow along them."
+          },
+          {
+            "text": "[Riffle outlier_vegetation] Riparian vegetation: 1 vs a site median of 4 across 8 past visits."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ac4286bb-0efa-42fa-b05e-e44a4d29c5a7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ac4286bb-0efa-42fa-b05e-e44a4d29c5a7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "clarity",
+              "display": "Visual turbidity"
+            }
+          ],
+          "text": "How clear is the water?"
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueInteger": 5,
+        "interpretation": [
+          {
+            "text": "Clear to the bed"
+          }
+        ],
+        "note": [
+          {
+            "text": "[Riffle dry_but_clear, citizen re-checked] Flow is marked as a dry bed, but water clarity is rated clear."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:192d0c3c-66f0-4411-9a14-52284d683d25",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "192d0c3c-66f0-4411-9a14-52284d683d25",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "algae",
+              "display": "Nuisance algae (periphyton)"
+            }
+          ],
+          "text": "How much green slime or algae do you see?"
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueInteger": 4,
+        "interpretation": [
+          {
+            "text": "A thin film on rocks"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:90cf4309-0255-4cb0-a1fe-31158318dbc2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "90cf4309-0255-4cb0-a1fe-31158318dbc2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "litter",
+              "display": "Refuse"
+            }
+          ],
+          "text": "How much trash is in or beside the stream?"
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueInteger": 3,
+        "interpretation": [
+          {
+            "text": "Several items"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d1887671-7712-462f-90ea-30cde520c69a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d1887671-7712-462f-90ea-30cde520c69a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "flow",
+              "display": "Channel flow status"
+            }
+          ],
+          "text": "How is the water moving?"
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueInteger": 1,
+        "interpretation": [
+          {
+            "text": "Dry bed, no water"
+          }
+        ],
+        "note": [
+          {
+            "text": "[Riffle dry_but_clear, citizen re-checked] Flow is marked as a dry bed, but water clarity is rated clear."
+          },
+          {
+            "text": "[Riffle outlier_flow] Channel flow status: 1 vs a site median of 4 across 8 past visits."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9a4bdeab-0c7f-4911-bd69-a53ff407c556",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9a4bdeab-0c7f-4911-bd69-a53ff407c556",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "habitat",
+              "display": "Instream cover"
+            }
+          ],
+          "text": "Are there places for fish and insects to hide?"
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueInteger": 4,
+        "interpretation": [
+          {
+            "text": "Many"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6ef1bd6e-e508-4c81-9e50-276547da5c4e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6ef1bd6e-e508-4c81-9e50-276547da5c4e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "odor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "none",
+              "display": "No smell"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:88eb66b5-7d4e-46a6-bad1-af3b9fba07af",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "88eb66b5-7d4e-46a6-bad1-af3b9fba07af",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "outfall"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "none",
+              "display": "No pipes seen"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6b4e5a6d-6e03-4ff2-8e58-3d938503d587",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6b4e5a6d-6e03-4ff2-8e58-3d938503d587",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "rain48h"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "no",
+              "display": "No"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2dba8fc3-ec57-41a7-96a1-d9d0e79d7fac",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2dba8fc3-ec57-41a7-96a1-d9d0e79d7fac",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "urn:riffle:codesystem:visual-stream-assessment",
+              "code": "review-priority",
+              "display": "Riffle review priority"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "effectiveDateTime": "2026-10-04T21:36:05.168Z",
+        "valueQuantity": {
+          "value": 0.758,
+          "unit": "probability",
+          "system": "http://unitsofmeasure.org",
+          "code": "1"
+        },
+        "interpretation": [
+          {
+            "text": "review"
+          }
+        ],
+        "note": [
+          {
+            "text": "dry_but_clear (weight 0.20): Flow is marked as a dry bed, but water clarity is rated clear."
+          },
+          {
+            "text": "firm_banks_no_roots (weight 0.25): Banks are rated firm while almost no plants grow along them."
+          },
+          {
+            "text": "short_visit (weight 0.30): Assessment took 3 min; eight visual checks usually take longer."
+          },
+          {
+            "text": "outlier_vegetation (weight 0.20): Riparian vegetation: 1 vs a site median of 4 across 8 past visits."
+          },
+          {
+            "text": "outlier_flow (weight 0.20): Channel flow status: 1 vs a site median of 4 across 8 past visits."
+          },
+          {
+            "text": "no_photo (weight 0.10): No photo attached to a submission that has other flags."
+          },
+          {
+            "text": "Reviewer: Photo requested; citizen confirmed dry bed with a pool upstream."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8f3e1eec-8b0f-4aa3-8520-a68a38809452",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "8f3e1eec-8b0f-4aa3-8520-a68a38809452",
+        "target": [
+          {
+            "reference": "urn:uuid:e569b207-b8bb-4e7b-833e-f46bce821457"
+          },
+          {
+            "reference": "urn:uuid:9afc3a5e-9f2b-4d9f-a4d5-96f126da9ea4"
+          },
+          {
+            "reference": "urn:uuid:20abdae3-53fe-44d3-89a9-00fc829fc10f"
+          },
+          {
+            "reference": "urn:uuid:ac4286bb-0efa-42fa-b05e-e44a4d29c5a7"
+          },
+          {
+            "reference": "urn:uuid:192d0c3c-66f0-4411-9a14-52284d683d25"
+          },
+          {
+            "reference": "urn:uuid:90cf4309-0255-4cb0-a1fe-31158318dbc2"
+          },
+          {
+            "reference": "urn:uuid:d1887671-7712-462f-90ea-30cde520c69a"
+          },
+          {
+            "reference": "urn:uuid:9a4bdeab-0c7f-4911-bd69-a53ff407c556"
+          },
+          {
+            "reference": "urn:uuid:6ef1bd6e-e508-4c81-9e50-276547da5c4e"
+          },
+          {
+            "reference": "urn:uuid:88eb66b5-7d4e-46a6-bad1-af3b9fba07af"
+          },
+          {
+            "reference": "urn:uuid:6b4e5a6d-6e03-4ff2-8e58-3d938503d587"
+          },
+          {
+            "reference": "urn:uuid:2dba8fc3-ec57-41a7-96a1-d9d0e79d7fac"
+          }
+        ],
+        "recorded": "2026-10-04T21:36:06.201Z",
+        "location": {
+          "reference": "urn:uuid:55102479-c310-4821-b8d1-8048b9cfb7a4",
+          "display": "Demo Site A: semi-natural urban stretch (synthetic)"
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "performer"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "urn:riffle:citizen",
+                "value": "demo-citizen"
+              },
+              "display": "Citizen scientist"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "assembler"
+                }
+              ]
+            },
+            "who": {
+              "display": "Riffle validator 0.1.0 (rules + site statistics, no autonomous edits)"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "verifier"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "urn:riffle:reviewer",
+                "value": "demo-reviewer"
+              },
+              "display": "Human reviewer"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "riffle",
+  "version": "0.1.0",
+  "description": "A second look for citizen stream assessments: explainable validation checks, human-in-the-loop review, FHIR R4 export.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Manonmayi Vedam",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "python3 -m http.server 8080"
+  }
+}
